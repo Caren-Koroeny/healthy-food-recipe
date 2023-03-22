@@ -3,7 +3,7 @@ import React from 'react';
 function Error() {
   return (
     <div>
-      <h1>Kindly Navigate bck to homepage, page does not exist</h1>
+      <h1>Kindly Navigate back to homepage, page does not exist</h1>
     </div>
   );
 }
