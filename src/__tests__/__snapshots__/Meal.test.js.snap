@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Component Renders Loading 1`] = `
+<div
+  class="loading"
+>
+  <h1>
+    loading...
+  </h1>
+</div>
+`;
+
+exports[`Loading Component Renders only loading 1`] = `
+<div
+  class="loading"
+>
+  <h1>
+    loading...
+  </h1>
+</div>
+`;
