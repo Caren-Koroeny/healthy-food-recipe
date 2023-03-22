@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
 import { categories } from '../Redux/Actions/mealActions';
@@ -12,16 +12,16 @@ const MealDetails = () => {
   const [loading, setLoading] = useState(true);
   const details = useSelector((state) => state.setcategory.detail.meals);
 
-  const fetchDetails = async () => {
+  const fetchDetails = useCallback(async () => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
     const res = await axios.get(url);
     dispatch(categories(res.data.meals[0]));
     setLoading(false);
-  };
+  }, [id, dispatch]);
 
   useEffect(() => {
     fetchDetails();
-  }, [id, fetchDetails]);
+  }, [fetchDetails]);
 
   if (loading) {
     return (
