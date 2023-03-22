@@ -13,7 +13,8 @@ function About() {
         “Those who will gratify their appetite,
         and then suffer because of their intemperance,
         and take drugs to relieve them, may be assured
-        that God will not interpose to save health and life which is so recklessly periled. The cause has produced the effect.”
+        that God will not interpose to save health and life which is so recklessly periled. 
+        The cause has produced the effect.”
       </p>
     </div>
   );
