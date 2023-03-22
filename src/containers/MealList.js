@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import Loading from '../components/Loading';
 import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Meal from '../components/Meal';
 import filters from '../components/filterArray';
-import '../styles/MealList.css';
 import CategoryFilter from '../components/CategoryFilter';
 
 const MealList = () => {
@@ -14,7 +13,7 @@ const MealList = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
-  const myFetch = () => {
+  const myFetch = useCallback(() => {
     const result = [];
     filters.map((myCategory) => {
       const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${myCategory}`;
@@ -33,11 +32,11 @@ const MealList = () => {
         })
         .catch((err) => err);
     });
-  };
+  }, [dispatch]);
 
   useEffect(() => {
     myFetch();
-  }, []);
+  }, [myFetch]);
 
   if (loading) {
     return (
