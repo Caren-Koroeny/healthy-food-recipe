@@ -6,7 +6,7 @@ import { categories } from '../Redux/Actions/mealActions';
 import Loading from '../components/Loading';
 import '../styles/Details.css';
 
-function MealDetails() {
+const MealDetails = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
@@ -44,6 +44,6 @@ function MealDetails() {
       </div>
     </div>
   );
-}
+};
 
 export default MealDetails;

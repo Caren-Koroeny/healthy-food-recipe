@@ -8,7 +8,7 @@ import filters from '../components/filterArray';
 import '../styles/MealList.css';
 import CategoryFilter from '../components/CategoryFilter';
 
-function MealList() {
+const MealList = () => {
   const myCategory = useSelector((state) => state.filter);
   const recipes = useSelector((state) => state.recipe.myMeals);
   const [loading, setLoading] = useState(true);
@@ -79,6 +79,6 @@ function MealList() {
       </div>
     </>
   );
-}
+};
 
 export default MealList;
