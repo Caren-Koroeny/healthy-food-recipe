@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="loading"
+  >
+    <h1>
+      loading...
+    </h1>
+  </div>
+</DocumentFragment>
+`;
