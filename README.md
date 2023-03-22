@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+<h1 align="center">Helathy food Recipes</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 
+In this project, I built a dynamic catalogue of recipes app using react/redux, Axios, promises,amongst other tools.
+- `Recipes List page` with a list of recipes that could be filtered by some parameters; in this project, it's a list of recipes that can be filtered by ingredients (shrimp, broccoli, etc.)
+- `Recipe Item page` for the recipe details; in this example, the recipe detail page (Preview Recipe)
 
-## Available Scripts
+In this application, a user can search for recipes by category and get a list of all the meals. The user can also click on a particular meal to see the details of the ingredients and instructions on how to prepare it.
 
-In the project directory, you can run:
+![screenshot](./src/meala.png)
 
-### `npm start`
+![screenshot](./src/meala2.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Redux
+- JSX
+- CSS
+- JavaScript
+- ESLint
+- Jest
+- Npm
+- Axios
+- Scss
 
-### `npm test`
+## Live Demo
+[Live Demo](https://aye-food-recipe.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Video Demo
+[Video 1](https://www.loom.com/share/8447d24e9fba4236849eb72a9122ff26)
+[React Redux](https://www.loom.com/share/f3304f2f7ba447be8909d62b967a0b13)
+[SPA](https://www.loom.com/share/dfacb57a9ec0484b815c3e3cf44c208a)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running, follow these simple steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- node.js must be installed on your device
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Follow the steps below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+git clone git@github.com:Alaska01/catalogue-food-recipes.git
+```
+2. Change directory 
+```sh
+cd food-recipes
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies
 
-## Learn More
+```sh
+yarn install or npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+yarn start or npm start
+```
 
-### Code Splitting
+## To run test
+```sh
+yarn test or npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![screenshot](./src/testreact.png)
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 **Aye Daniel Asoo**
 
-### Making a Progressive Web App
+- [Github](https://github.com/Alaska01)
+- [Twitter](https://twitter.com/AyeAsoo)
+- [Linkedin](https://www.linkedin.com/in/daniel-asoo-aye/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to check the [issues page](https://github.com/Alaska01/catalogue-food-recipes/issues).
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give and ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Microverse](https://www.microverse.org/)
+- <a href="https://www.themealdb.com/api.php" target="_blank">Themealdb API</a>
+- Design idea by <a href="https://www.behance.net/gallery/11351281/NomNom" target="_blank">Marc-Antoine Roy on Behance</a>

@@ -17,15 +17,23 @@
 
 @media only screen and (max-width: 600px) {
   .details-page {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+  }
+
+  .text-center {
+    display: flex;
+    justify-content: center;
   }
 }
 

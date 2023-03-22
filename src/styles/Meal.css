@@ -1,5 +1,7 @@
 .meal-container {
   background-color: rgb(223, 4, 110);
+  border-radius: 20px;
+  height: 300px;
 }
 
 .meal-card {
@@ -38,7 +40,6 @@
 
 .cards {
   text-decoration: none;
-
 }
 
 .loading {
@@ -46,11 +47,40 @@
 }
 
 @media only screen and (max-width: 692px) {
+  .meal-container {
+    background-color: rgb(223, 4, 110);
+    border-radius: 20px;
+    height: 350px;
+    border: solid 1px #ccc;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .meal-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .cards {
+    text-decoration: none;
+  }
+
   .meal-card {
     display: flex;
     flex-wrap: wrap;
     width: 320px;
     margin: 5px auto;
+    border: none;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: none;
   }
 
   .image {
