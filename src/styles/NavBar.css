@@ -6,6 +6,17 @@
   justify-content: space-between;
 }
 
+.icons1 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  justify-content: space-between;
+  margin-top: -50px;
+  gap: 20px;
+  color: white;
+}
+
 .heading,
 .nav h1 {
   padding-top: 25px;
@@ -21,19 +32,30 @@
 
 @media only screen and (max-width: 600px) {
   .nav {
-    flex-direction: column;
+    height: 5rem;
+  }
+  .heading {
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px;
+    color: #fff;
+  }
+  .home-kitchen{
     display: flex;
     flex-direction: row;
   }
+  .back{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: -5px;
+    margin-left: 5px;
+  }
   .icons1 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 5rem;
-    justify-content: space-between;
-    margin-top: -50px;
+    margin-top: 0px;
+    padding: 10px;
     gap: 20px;
     color: white;
+    font-size: 20px;
 }
 }
 

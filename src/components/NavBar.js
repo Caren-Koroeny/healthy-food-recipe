@@ -7,23 +7,21 @@ import '../styles/MealList.css';
 
 const NavBar = () => (
   <nav data-testid="nav" className="nav">
-    <div>
-    <Link className="back" to="/"> <FaArrowAltCircleLeft className="icons" /> </Link>
+  <Link className="back" to="/"> <FaArrowAltCircleLeft className="icons" /> </Link>
+    <div className="home-kitchen">
+    <Link className="heading" to="/" onClick={() => MealList()}>
+        <h2>Home</h2>
+      </Link>
       <Link className="heading" to="/" onClick={() => MealList()}>
-        <h1>Home</h1>
+        <h2>Food</h2>
       </Link>
     </div>
-    <header>
-      <Link className="heading" to="/" onClick={() => MealList()}>
-        <h1>Yummy Kitchen</h1>
-      </Link>
-    </header>
     <div>
-      <Link className="icons1" to="/">
-      <FaMicrophone className="icons1" />
-      <SlSettings className="icons1" />
-      </Link>
-    </div>
+    <Link className="icons1" to="/">
+    <FaMicrophone className="icons1" />
+    <SlSettings className="icons1" />
+    </Link>
+  </div>
   </nav>
 );
 
