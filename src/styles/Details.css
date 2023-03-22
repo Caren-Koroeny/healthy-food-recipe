@@ -13,6 +13,7 @@
 .description {
   line-height: 2;
   margin: 40px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,6 +34,7 @@
   }
 
   .text-center {
+    color: #fff;
     display: flex;
     justify-content: center;
   }

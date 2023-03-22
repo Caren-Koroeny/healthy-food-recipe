@@ -34,29 +34,33 @@
   .nav {
     height: 5rem;
   }
+
   .heading {
     text-decoration: none;
     font-size: 10px;
     padding: 10px;
     color: #fff;
   }
-  .home-kitchen{
+
+  .home-kitchen {
     display: flex;
     flex-direction: row;
   }
-  .back{
+
+  .back {
     color: #fff;
     font-size: 30px;
     margin-bottom: -5px;
     margin-left: 5px;
   }
+
   .icons1 {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 10px;
     gap: 20px;
     color: white;
     font-size: 20px;
-}
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
