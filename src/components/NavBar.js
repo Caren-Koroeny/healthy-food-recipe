@@ -3,7 +3,7 @@ import MealList from '../containers/MealList';
 import '../styles/NavBar.css';
 import '../styles/MealList.css';
 
-function NavBar() {
+const NavBar = () => {
   return (
     <nav data-testid="nav" className="nav">
       <div>

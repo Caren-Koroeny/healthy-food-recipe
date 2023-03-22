@@ -47,6 +47,6 @@ const Meal = ({ id, name, image }) => {
       </div>
     </section>
   );
-}
+};
 
 export default Meal;
