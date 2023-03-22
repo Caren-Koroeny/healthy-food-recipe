@@ -22,7 +22,19 @@
 @media only screen and (max-width: 600px) {
   .nav {
     flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
+  .icons1 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    justify-content: space-between;
+    margin-top: -50px;
+    gap: 20px;
+    color: white;
+}
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
