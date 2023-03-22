@@ -6,20 +6,18 @@ import MealDetails from '../containers/MealDetails';
 import Error from './Error';
 import About from './About';
 
-function App() {
-  return (
-    <div className="app">
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<MealList />} />
-          <Route path="/Meal/:id" element={<MealDetails />} />
-          <Route exact path="About" element={<About />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </Router>
-    </div>
-  );
-}
+const App = () => (
+  <div className="app">
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<MealList />} />
+        <Route path="/Meal/:id" element={<MealDetails />} />
+        <Route exact path="About" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
+  </div>
+);
 
 export default App;
