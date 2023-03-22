@@ -101,16 +101,16 @@
     margin: 5px auto;
     border: none;
   }
-  
+
   .meal-card > * {
     width: calc(50% - 5px);
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  
+
   .meal-card > *:nth-child(2n) {
     margin-right: 0;
-  }  
+  }
 
   .image {
     width: 300px;
