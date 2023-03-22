@@ -7,7 +7,7 @@ import Error from './Error';
 import About from './About';
 
 const App = () => (
-  <div className="app">
+  <div>
     <Router>
       <NavBar />
       <Routes>
