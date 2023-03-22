@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Meal.css';
 
-function Meal({ id, name, image }) {
+const Meal = ({ id, name, image }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
