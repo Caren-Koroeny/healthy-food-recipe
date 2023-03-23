@@ -36,9 +36,14 @@ In this project, I built a dynamic catalogue of food recipes app using react/red
 
 - In this application, a user can search for recipes by `category` and get a `list of all the meals`. The user can also click on a particular meal to see the details of the ingredients and instructions on how to prepare it.
 
-![](./src/images/homepage.png)
+![](./src/images/allitems.png)
+
+
+![](./src/images/categoryitem.png)
+
 
 ![](./src/images/details.png)
+
 
 ![](./src/images/tests.png)
 
