@@ -74,7 +74,7 @@ In this project, I built a dynamic catalogue of food recipes app using react/red
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live version](https://641c3c7db476eb1700aca07b--heroic-dasik-5790ea.netlify.app/)
+[Live version](https://641c558986394009d2a50c8e--spectacular-cranachan-840b5f.netlify.app/)
 
 
 
