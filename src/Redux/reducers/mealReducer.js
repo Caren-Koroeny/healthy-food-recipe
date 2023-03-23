@@ -6,12 +6,12 @@ const initialState = {
 
 // eslint-disable-next-line default-param-last
 const mealReducer = (state = initialState, { type, payload }) => {
-  switch (type) {
-    case actionTypes.SET_MEALS:
-      return { ...state, myMeals: payload };
-    default:
-      return state;
-  }
+  const actionHandlers = {
+    [actionTypes.SET_MEALS]: () => ({ ...state, myMeals: payload }),
+    default: () => state,
+  };
+  const handler = actionHandlers[type] || actionHandlers.default;
+  return handler();
 };
 
 export default mealReducer;

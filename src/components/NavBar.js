@@ -17,9 +17,6 @@ const NavBar = () => (
       <Link className="heading" to="/" onClick={() => MealList()}>
         <h2>Home</h2>
       </Link>
-      <Link className="heading" to="/" onClick={() => MealList()}>
-        <h2>Food</h2>
-      </Link>
     </div>
     <div>
       <Link className="icons1" to="/">
