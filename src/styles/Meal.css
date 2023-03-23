@@ -1,15 +1,12 @@
-.meal-container {
+.meal-card {
   background-color: rgb(223, 4, 110);
   border-radius: 20px;
-  height: 300px;
-}
-
-.meal-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 25px;
   width: 250px;
   height: 300px;
+  align-items: center;
   font-size: 16px;
   border: solid rgb(177, 173, 173);
   border-radius: 10px;
@@ -18,7 +15,6 @@
 .image {
   width: 230px;
   height: 230px;
-  padding: 10px;
 }
 
 .fade-in {
@@ -47,29 +43,18 @@
 }
 
 @media only screen and (max-width: 692px) {
-  .meal-container {
-    background-color: rgb(223, 4, 110);
-    border-radius: 20px;
-    height: 350px;
-    border: solid 1px #ccc;
-    transition: transform 0.2s ease-in-out;
+  .meal-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 180px;
+    border: none;
   }
 
-  .meal-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  meal-container{
+    padding: 10px;
   }
-
   .cards {
     text-decoration: none;
-  }
-
-  .meal-card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 320px;
-    margin: 5px auto;
-    border: none;
   }
 
   .fade-in {
@@ -84,7 +69,8 @@
   }
 
   .image {
-    width: 300px;
+    width: 170px;
+    margin: 5px;
     border-radius: 20px;
   }
 
@@ -95,10 +81,9 @@
 
 @media only screen and (min-width: 692px) and (max-width: 768px) {
   .meal-card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 320px;
-    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 220px;
     border: none;
   }
 
@@ -113,7 +98,7 @@
   }
 
   .image {
-    width: 300px;
+    width: 200px;
   }
 
   .title {
