@@ -1,7 +1,6 @@
 import { FaArrowAltCircleLeft, FaMicrophone } from 'react-icons/fa';
 import { SlSettings } from 'react-icons/sl';
 import { Link } from 'react-router-dom';
-// import MealList from '../containers/MealList';
 import '../styles/NavBar.css';
 import '../styles/MealList.css';
 
