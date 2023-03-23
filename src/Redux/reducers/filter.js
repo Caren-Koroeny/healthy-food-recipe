@@ -2,12 +2,12 @@ import actionTypes from '../constants/actionTypes';
 
 // eslint-disable-next-line default-param-last
 const filterReducer = (state = 'All', action) => {
-  switch (action.type) {
-    case actionTypes.CHANGE_FILTER:
-      return action.filter;
-    default:
-      return state;
-  }
+  const actionHandlers = {
+    [actionTypes.CHANGE_FILTER]: () => action.filter,
+    default: () => state,
+  };
+  const handler = actionHandlers[action.type] || actionHandlers.default;
+  return handler();
 };
 
 export default filterReducer;

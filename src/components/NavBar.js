@@ -7,7 +7,7 @@ import '../styles/MealList.css';
 
 const NavBar = () => (
   <nav data-testid="nav" className="nav">
-    <Link className="back" to="/">
+    <Link className="back" to="/" onClick={() => MealList()}>
       {' '}
       <FaArrowAltCircleLeft className="icons" />
       {' '}

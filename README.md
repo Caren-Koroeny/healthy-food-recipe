@@ -69,7 +69,7 @@ In this project, I built a dynamic catalogue of food recipes app using react/red
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live version](https://main-project--eloquent-stardust-35341e.netlify.app/)
+[Live version]()
 
 
 
