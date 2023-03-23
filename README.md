@@ -1,4 +1,4 @@
-# Healthy Food Recipe
+# Food Recipe
 
 <a name="readme-top"></a>
 
@@ -170,9 +170,10 @@ If you like this project, please don't forget to follow me and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- Designer - [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 - You for viewing this repo and dropping a ⭐️.
 - Microverse Inc
-- etc
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
