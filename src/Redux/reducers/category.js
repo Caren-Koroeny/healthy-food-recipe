@@ -6,12 +6,12 @@ const initialState = {
 
 // eslint-disable-next-line default-param-last
 const categoryReducer = (state = initialState, { type, payload }) => {
-  switch (type) {
-    case actionTypes.CATEGORY_FILTER:
-      return { ...state, detail: payload };
-    default:
-      return state;
-  }
+  const actionHandlers = {
+    [actionTypes.CATEGORY_FILTER]: () => ({ ...state, detail: payload }),
+    default: () => state,
+  };
+  const handler = actionHandlers[type] || actionHandlers.default;
+  return handler();
 };
 
 export default categoryReducer;
