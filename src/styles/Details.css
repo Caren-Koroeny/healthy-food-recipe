@@ -19,6 +19,7 @@
 @media only screen and (max-width: 600px) {
   .details-page {
     background-color: rgb(247, 7, 123);
+    width: 20rem;
     display: flex;
     flex-wrap: wrap;
   }
