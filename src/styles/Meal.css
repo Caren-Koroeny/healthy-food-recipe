@@ -52,7 +52,9 @@
     grid-template-columns: 1fr 1fr;
     width: 180px;
     height: 100%;
+    gap: 2px;
     border: none;
+    margin-left: -3px;
   }
   .meal-card > *:nth-child(2n) {
     box-shadow: 0 0 11px 10px rgb(223, 4, 110);
