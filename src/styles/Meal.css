@@ -7,7 +7,7 @@
   border: none;
 }
 
-.meal-card > *:nth-child(2n) {
+.meal-card > *:nth-child(even) {
   box-shadow: 0 0 1px 1px rgb(223, 4, 110);
   background-color: rgb(235, 59, 156);
 }
