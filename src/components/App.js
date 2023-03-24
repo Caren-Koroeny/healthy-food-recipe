@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import NavBar from './NavBar';
 import MealList from '../containers/MealList';
 import MealDetails from '../containers/MealDetails';
@@ -9,7 +9,7 @@ import About from './About';
 
 const App = () => (
   <div className="body">
-    <Router>
+    <BrowserRouter>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<MealList />} />
@@ -17,7 +17,7 @@ const App = () => (
         <Route exact path="About" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   </div>
 );
 
