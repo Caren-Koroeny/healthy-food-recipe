@@ -1,5 +1,4 @@
 .meal-card {
-  background-color: rgb(223, 4, 110);
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,6 +10,11 @@
   border: solid rgb(177, 173, 173);
   border-radius: 10px;
 }
+.meal-card:nth-of-type(odd) {
+  background-color: rgb(223, 4, 110);
+}
+
+
 
 .image {
   width: 230px;
@@ -29,7 +33,7 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
   color: white;
 }
@@ -47,15 +51,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 180px;
+    height: 100%;
     border: none;
   }
-
-  meal-container{
-    padding: 10px;
+  .meal-card > *:nth-child(2n) {
+    box-shadow: 0 0 11px 10px rgb(223, 4, 110);
+    background-color: rgb(235, 59, 156);
+  }
+  .meal-card:nth-of-type(odd) {
+    box-shadow: 0 0 11px 8px rgb(235, 59, 156);
+    background-color: rgb(223, 4, 110);
   }
   .cards {
     text-decoration: none;
   }
+ 
+  .arrow-icon {
+    margin-left: 140px;
+    margin-bottom: -20px;
+    font-size: 24px;
+    color: #fff;
+}
 
   .fade-in {
     opacity: 0;
@@ -71,6 +87,7 @@
   .image {
     width: 170px;
     margin: 5px;
+    height: 100%;
     border-radius: 20px;
   }
 

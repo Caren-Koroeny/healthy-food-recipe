@@ -57,6 +57,7 @@ const MealList = () => {
   return (
     <>
       <div className="category">
+        <h2 className="yummy">Yummy food Recipe</h2>
         <h3 data-testid="category">Choose Category</h3>
         <div>
           <CategoryFilter handleFilterChange={handleFilterChange} />

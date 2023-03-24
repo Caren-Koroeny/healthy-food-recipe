@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import '../styles/Meal.css';
 
 const Meal = ({ id, name, image }) => {
@@ -31,23 +32,26 @@ const Meal = ({ id, name, image }) => {
   }, []);
 
   return (
-    <section className="meal-container">
-      <div
-        className={`meal-card ${isVisible ? 'fade-in is-visible' : 'fade-in'}`}
-        data-testid="meal-card"
-        key={id}
-        ref={ref}
-      >
-        <Link className="cards " to={`/meal/${id}`}>
-          <div>
-            <img className="image" src={image} alt={name} />
-          </div>
-          <div>
-            <h3 className="title">{name}</h3>
-          </div>
-        </Link>
-      </div>
-    </section>
+    <div
+      className={`meal-card ${isVisible ? 'fade-in is-visible' : 'fade-in'}`}
+      data-testid="meal-card"
+      key={id}
+      ref={ref}
+    >
+      <Link className="cards " to={`/meal/${id}`}>
+        <div>
+          {' '}
+          <BsArrowRightCircle className="arrow-icon" />
+        </div>
+        <div>
+          <h3 className="title">{name}</h3>
+        </div>
+        <div>
+          <img className="image" src={image} alt={name} />
+        </div>
+
+      </Link>
+    </div>
   );
 };
 
