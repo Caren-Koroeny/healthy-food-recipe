@@ -9,6 +9,7 @@
   margin-left: 20px;
   font-size: 24px;
 }
+
 .category {
   display: flex;
   width: 23.3em;
@@ -19,15 +20,13 @@
   background-color: deeppink;
 }
 
-  .yummy {
-    color: aliceblue;
-    margin-left: 40px;
-    font-size: 24px;
-    color: rgb(250, 245, 245);
-  }
+.yummy {
+  margin-left: 40px;
+  font-size: 24px;
+  color: rgb(250, 245, 245);
+}
 
-  .dropdown {
-    margin-bottom: 40px;
-    margin-right: 6px;
-  }
-
+.dropdown {
+  margin-bottom: 40px;
+  margin-right: 6px;
+}
