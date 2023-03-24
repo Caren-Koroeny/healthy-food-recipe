@@ -9,26 +9,25 @@
   margin-left: 20px;
   font-size: 24px;
 }
-
-@media only screen and (max-width: 680px) {
-  .category {
-    display: flex;
-    width: 24rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    margin-left: -30px;
-    background-color: deeppink;
+.category {
+  display: flex;
+  width: 23.3em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: deeppink;
 }
-  .yummy{
+
+  .yummy {
     color: aliceblue;
     margin-left: 40px;
     font-size: 24px;
     color: rgb(250, 245, 245);
   }
-  .dropdown{
-    margin-bottom: 10px;
+
+  .dropdown {
+    margin-bottom: 40px;
     margin-right: 6px;
   }
-}
+

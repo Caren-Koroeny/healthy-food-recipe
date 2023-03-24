@@ -4,10 +4,11 @@ import NavBar from './NavBar';
 import MealList from '../containers/MealList';
 import MealDetails from '../containers/MealDetails';
 import Error from './Error';
+import '../styles/main.css';
 import About from './About';
 
 const App = () => (
-  <div>
+  <div className="body">
     <Router>
       <NavBar />
       <Routes>

@@ -1,23 +1,6 @@
+
 * {
-  box-sizing: border-box;
   margin: 0 auto;
-  max-width: 375px;
   padding: 0;
 }
 
-body {
-  font-family: 'Lobster', cursive;
-  background-color: rgb(238, 54, 91);
-}
-
-.about-us {
-  margin: 0 20px;
-}
-
-.about {
-  color: rgb(136, 221, 136);
-}
-
-.app {
-  background-color: rgb(177, 8, 92);
-}

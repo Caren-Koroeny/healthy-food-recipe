@@ -1,79 +1,37 @@
 .meal-card {
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 25px;
-  width: 250px;
-  height: 300px;
-  align-items: center;
-  font-size: 16px;
-  border: solid rgb(177, 173, 173);
-  border-radius: 10px;
-}
-.meal-card:nth-of-type(odd) {
-  background-color: rgb(223, 4, 110);
-}
-
-
-
-.image {
-  width: 230px;
-  height: 230px;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-.title {
-  font-size: 13px;
-  text-align: center;
-  color: white;
-}
-
-.cards {
-  text-decoration: none;
-}
-
-.loading {
-  color: rgb(238, 39, 105);
-}
-
-@media only screen and (max-width: 692px) {
-  .meal-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 180px;
+    width: 186px;
     height: 100%;
-    gap: 2px;
+    margin-top: -10px;
     border: none;
-    margin-left: -3px;
   }
+
   .meal-card > *:nth-child(2n) {
-    box-shadow: 0 0 6px 8px rgb(223, 4, 110);
+    box-shadow: 0 0 1px 1px rgb(223, 4, 110);
     background-color: rgb(235, 59, 156);
   }
+
   .meal-card:nth-of-type(odd) {
-    box-shadow: 0 0 11px 8px rgb(235, 59, 156);
+    box-shadow: 0 0 0px rgb(235, 59, 156);
     background-color: rgb(223, 4, 110);
   }
+
   .cards {
     text-decoration: none;
   }
- 
+  .title {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+  }
+
   .arrow-icon {
     margin-left: 140px;
     margin-bottom: -20px;
     font-size: 24px;
     color: #fff;
-}
+  }
 
   .fade-in {
     opacity: 0;
@@ -96,37 +54,7 @@
   .container {
     margin: 0;
   }
-}
 
-@media only screen and (min-width: 692px) and (max-width: 768px) {
-  .meal-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 220px;
-    border: none;
+  .loading {
+    color: rgb(238, 39, 105);
   }
-
-  .meal-card > * {
-    width: calc(50% - 5px);
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-
-  .meal-card > *:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .image {
-    width: 200px;
-  }
-
-  .title {
-    font-size: 16px;
-    padding-top: 5px;
-    text-align: center;
-  }
-
-  .container {
-    margin: 0;
-  }
-}
