@@ -38,8 +38,8 @@ const MealDetails = () => {
         <h3 className="text-center">{strMeal}</h3>
         <img className="img" src={strMealThumb} alt={strMeal} />
       </div>
-      <div>
-        <h2 className="text-center">INSTRUCTIONS</h2>
+      <div className="instr">
+        <h2 className="text">INSTRUCTIONS</h2>
         <p className="description">{strInstructions}</p>
       </div>
     </div>

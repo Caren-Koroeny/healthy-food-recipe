@@ -57,7 +57,7 @@
     margin-left: -3px;
   }
   .meal-card > *:nth-child(2n) {
-    box-shadow: 0 0 11px 10px rgb(223, 4, 110);
+    box-shadow: 0 0 6px 8px rgb(223, 4, 110);
     background-color: rgb(235, 59, 156);
   }
   .meal-card:nth-of-type(odd) {
