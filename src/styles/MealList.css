@@ -1,0 +1,32 @@
+
+.select {
+  margin-left: 20px;
+  padding: 5px 80px 5px 0;
+}
+
+.category h3 {
+  color: rgb(250, 245, 245);
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+.category {
+  display: flex;
+  width: 23.3em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: deeppink;
+}
+
+.yummy {
+  margin-left: 40px;
+  font-size: 24px;
+  color: rgb(250, 245, 245);
+}
+
+.dropdown {
+  margin-bottom: 40px;
+  margin-right: 6px;
+}

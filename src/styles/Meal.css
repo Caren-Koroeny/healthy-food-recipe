@@ -1,0 +1,59 @@
+.meal-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 186px;
+  height: 100%;
+  margin-top: -10px;
+  border: none;
+}
+
+.meal-card > *:nth-child(even) {
+  box-shadow: 0 0 1px 1px rgb(223, 4, 110);
+  background-color: rgb(235, 59, 156);
+}
+
+.meal-card:nth-of-type(odd) {
+  box-shadow: 0 0 0 rgb(235, 59, 156);
+  background-color: rgb(223, 4, 110);
+}
+
+.cards {
+  text-decoration: none;
+}
+
+.title {
+  color: white;
+}
+
+.arrow-icon {
+  margin-left: 140px;
+  margin-bottom: -20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.image {
+  width: 170px;
+  margin: 15px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.container {
+  margin: 0;
+}
+
+.loading {
+  color: rgb(238, 39, 105);
+}

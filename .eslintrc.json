@@ -15,10 +15,19 @@
   "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
   "plugins": ["react"],
   "rules": {
+    "react/function-component-definition": [
+      2,
+      {
+          "namedComponents": "arrow-function",
+          "unnamedComponents": "arrow-function"
+      }
+  ],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "react/prop-types": "off"
   },
   "ignorePatterns": [
     "dist/",
